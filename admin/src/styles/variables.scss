@@ -1,0 +1,49 @@
+// ============================================================
+// 慧宁甄选管理后台 - SCSS 主题变量
+// ============================================================
+
+// 品牌色（与小程序 spec.md 7.1 保持一致）
+$color-primary: #2b7a4b;        // 慧宁绿
+$color-primary-light: #4a9d6a;
+$color-primary-dark: #1f5c36;
+$color-gold: #c8a45c;            // 雅趣金
+$color-gold-light: #e0bc78;
+
+// 功能色
+$color-success: #52c41a;
+$color-warning: #faad14;
+$color-danger: #f5222d;
+$color-info: #909399;
+
+// 中性色
+$color-text-primary: #303133;
+$color-text-regular: #606266;
+$color-text-secondary: #909399;
+$color-text-placeholder: #c0c4cc;
+$color-border: #dcdfe6;
+$color-border-light: #e4e7ed;
+$color-bg-page: #f0f2f5;
+$color-bg-card: #ffffff;
+
+// 布局尺寸
+$sidebar-width: 220px;
+$sidebar-width-collapsed: 64px;
+$navbar-height: 56px;
+$tagsview-height: 38px;
+$content-padding: 16px;
+
+// 圆角
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+
+// 阴影
+$shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08);
+$shadow-dropdown: 0 2px 12px rgba(0, 0, 0, 0.12);
+
+// z-index
+$z-sidebar: 1000;
+$z-navbar: 1001;
+$z-tagsview: 1002;
+$z-dropdown: 2000;
+$z-modal: 3000;

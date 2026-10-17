@@ -1,0 +1,116 @@
+// =============================================================================
+// 公共样式类（可在模板中直接使用）
+// =============================================================================
+
+@import './mixins.scss';
+
+// ---------- 页面容器 ----------
+.hn-page {
+  min-height: 100vh;
+  background-color: $hn-bg;
+}
+
+.hn-container {
+  padding: $spacing-sm;
+}
+
+// ---------- 文字层级 ----------
+.hn-text-1   { color: $hn-text-1; }
+.hn-text-2   { color: $hn-text-2; }
+.hn-text-3   { color: $hn-text-3; }
+.hn-text-danger { color: $hn-danger; }
+.hn-text-gold   { color: $hn-gold-700; }
+
+.hn-title-lg { font-size: $font-size-title-lg; font-weight: $font-weight-semibold; line-height: $line-height-title; }
+.hn-title    { font-size: $font-size-title;    font-weight: $font-weight-semibold; line-height: $line-height-title; }
+.hn-body     { font-size: $font-size-body;     font-weight: $font-weight-normal;   line-height: $line-height-body; }
+.hn-caption  { font-size: $font-size-caption;  font-weight: $font-weight-normal;   line-height: $line-height-body; }
+.hn-price    { font-size: $font-size-price;    font-weight: $font-weight-bold;     font-family: $font-family-din; }
+
+// ---------- 卡片 ----------
+.hn-card {
+  @include card;
+  padding: $spacing-sm;
+}
+
+// ---------- 按钮 ----------
+.hn-btn-primary {
+  @include primary-btn;
+  padding: 0 $spacing-lg;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.hn-btn-ghost {
+  @include pill-btn;
+  padding: 0 $spacing-lg;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: inline-block;
+  color: $hn-green-700;
+  background-color: $hn-green-50;
+  border: 2rpx solid $hn-green-300;
+}
+
+.hn-btn-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+// ---------- 金色徽章 ----------
+.hn-badge-gold {
+  @include gold-badge;
+  padding: 2rpx 12rpx;
+  display: inline-block;
+}
+
+// ---------- 预售角标 ----------
+.hn-badge-presale {
+  display: inline-block;
+  padding: 2rpx 12rpx;
+  background-image: $gradient-gold;
+  color: #ffffff;
+  font-size: $font-size-caption;
+  font-weight: $font-weight-semibold;
+  border-radius: $radius-small;
+}
+
+// ---------- 分割线 ----------
+.hn-divider {
+  height: 1rpx;
+  background-color: $hn-line;
+  width: 100%;
+}
+
+// ---------- 文字省略 ----------
+.hn-ellipsis {
+  @include ellipsis;
+}
+.hn-ellipsis-2 {
+  @include ellipsis-lines(2);
+}
+
+// ---------- 安全区域 ----------
+.hn-safe-bottom {
+  @include safe-area-bottom;
+}
+
+// ---------- flex 工具 ----------
+.hn-flex-center  { @include flex-center; }
+.hn-flex-between { @include flex-between; }
+.hn-flex         { display: flex; }
+.hn-flex-col     { display: flex; flex-direction: column; }
+.hn-flex-1       { flex: 1; }
+
+// ---------- 间距工具 ----------
+.hn-mt-xs { margin-top: $spacing-xs; }
+.hn-mt-sm { margin-top: $spacing-sm; }
+.hn-mt-md { margin-top: $spacing-md; }
+.hn-mt-lg { margin-top: $spacing-lg; }
+.hn-mb-sm { margin-bottom: $spacing-sm; }
+.hn-mb-md { margin-bottom: $spacing-md; }
+.hn-pt-sm { padding-top: $spacing-sm; }
+.hn-pb-sm { padding-bottom: $spacing-sm; }

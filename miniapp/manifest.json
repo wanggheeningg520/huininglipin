@@ -1,0 +1,45 @@
+{
+  "name": "慧宁甄选",
+  "appid": "__UNI__HUINING",
+  "description": "慧宁甄选礼品商城一期小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "animationType": "fade-in",
+      "duration": 500
+    },
+    "modules": {},
+    "distribute": {
+      "android": { "permissions": ["<uses-permission android:name=\"android.permission.INTERNET\"/>"] },
+      "ios": {},
+      "sdkConfigs": {}
+    }
+  },
+  "quickapp": {},
+  "mp-weixin": {
+    "appid": "wxplaceholderhuining",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "minified": true,
+      "postcss": true
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.userLocation": {
+        "desc": "用于展示附近配送范围"
+      }
+    },
+    "requiredPrivateInfos": ["chooseAddress"]
+  },
+  "h5": {
+    "router": { "mode": "history", "base": "/miniapp/" }
+  },
+  "vueVersion": "3"
+}

@@ -1,0 +1,42 @@
+// =============================================================================
+// 样式重置
+// =============================================================================
+
+page {
+  background-color: $hn-bg;
+  color: $hn-text-1;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  -webkit-font-smoothing: antialiased;
+}
+
+view, text, button, input, textarea, image, scroll-view, swiper, swiper-item {
+  box-sizing: border-box;
+}
+
+image {
+  display: block;
+}
+
+// 移除按钮默认边框/背景
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+
+  &::after {
+    border: none;
+  }
+}
+
+// 去掉 input 默认样式
+input, textarea {
+  font-size: inherit;
+  color: inherit;
+}

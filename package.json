@@ -1,0 +1,16 @@
+{
+  "name": "huining-gift-mall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "慧宁甄选礼品商城（一期）monorepo",
+  "scripts": {
+    "dev": "pnpm --filter backend start:dev",
+    "build": "pnpm --filter backend build",
+    "start": "pnpm --filter backend start:prod",
+    "lint": "pnpm -r lint"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
